@@ -14,6 +14,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://prueba-tecnica-indol.vercel.app",
+        "APP_KEY": "base64:obmY+GJkCiL+DjT5ZptFrtnSY2SW3WKOQzVOu7cBZ4M=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
