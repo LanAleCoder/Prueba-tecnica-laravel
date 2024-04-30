@@ -1,7 +1,9 @@
 @extends('layouts.default')
 @section('meta-tags')
     <title>MDB - Inicio</title>
-    @vite(['resources/css/pages/home/home-style.css'])
+@endsection
+@section('customStyleSheet')
+    'resources/css/home/home-style.css'
 @endsection
 @section('custom-content-layout')
     <div class="section">

@@ -1,0 +1,61 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-l0sNRNKZ.js",
+    "name": "app",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/footer/footer-style.css": {
+    "file": "assets/footer-style-l0sNRNKZ.js",
+    "name": "footer-style",
+    "src": "resources/css/footer/footer-style.css",
+    "isEntry": true
+  },
+  "resources/css/header/header-style.css": {
+    "file": "assets/header-style-3mYJtu4y.css",
+    "src": "resources/css/header/header-style.css",
+    "isEntry": true
+  },
+  "resources/css/layout/layout-style.css": {
+    "file": "assets/layout-style-ucX68Wma.css",
+    "src": "resources/css/layout/layout-style.css",
+    "isEntry": true
+  },
+  "resources/css/pages/home/home-style.css": {
+    "file": "assets/home-style-HFjATWEo.css",
+    "src": "resources/css/pages/home/home-style.css",
+    "isEntry": true
+  },
+  "resources/css/reset.css": {
+    "file": "assets/reset-D-cE7Mgx.css",
+    "src": "resources/css/reset.css",
+    "isEntry": true
+  },
+  "resources/css/utils/utils-style.css": {
+    "file": "assets/utils-style-BXZhnju3.css",
+    "src": "resources/css/utils/utils-style.css",
+    "isEntry": true
+  },
+  "resources/fonts/Nunito-Black.ttf": {
+    "file": "assets/Nunito-Black-DHv_wkcN.ttf",
+    "src": "resources/fonts/Nunito-Black.ttf"
+  },
+  "resources/fonts/Nunito-Bold.ttf": {
+    "file": "assets/Nunito-Bold-CZ01jYvx.ttf",
+    "src": "resources/fonts/Nunito-Bold.ttf"
+  },
+  "resources/fonts/Nunito-Regular.ttf": {
+    "file": "assets/Nunito-Regular-BzIFT1ox.ttf",
+    "src": "resources/fonts/Nunito-Regular.ttf"
+  },
+  "resources/images/home/cinema-seccion1.jpg": {
+    "file": "assets/cinema-seccion1-DSPHFNky.jpg",
+    "src": "resources/images/home/cinema-seccion1.jpg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DkDdL2UM.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
