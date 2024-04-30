@@ -1,0 +1,201 @@
+/*
+    * Funcion de este reset css
+    * * 🛠 Unificar el uso de Custom Propierties 
+    * * 🛠 Problemas de box-model más generales
+    * * 🛠 Problemas con imagenes, videos e iconos svg
+    * * 🛠 Problemas con tipografias y etiquetas input en formularios
+    * * 🛠 Unificar la tipografía de todas las etiquetas de una web
+*/
+
+@font-face {
+    font-family: "Nunito Regular";
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Bold";
+    src: url("../fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Black";
+    src: url("../fonts/Nunito-Black.ttf");
+}
+
+/* Aquí definimos las custom propierties */
+:root {
+    --color-primary: #181818;
+    --color-secundary: #f0f0f0;
+
+    /*Tipografia*/
+    --font-primary: "Nunito Regular", Arial, sans-serif;
+    --font-secundary: Verdana;
+}
+
+/* Adaptcación al modo oscuro */
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #f0f0f0;
+        --color-secundary: #181818;
+    }
+} */
+/* Configuración en modo alto contraste */
+/* @media (prefers-contrast: high) {
+    :root {
+        --color-primary: black;
+        --color-secundary: white;
+    }
+} */
+/* Configuración de animaciones si el usuario lo desactiva  */
+@media (prefers-reduce-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* Reseteo de margin y padding a todas las etiquetas */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* Adaptación de imagenes por defecto y ciertos problemas que a veces generan */
+img,
+picture {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+/* Reseteo de enlaces para funcionar como cajas
+    ! Excluimos los que estan dentro de la etiqueta p
+*/
+a {
+    display: block;
+}
+
+p a {
+    display: inline;
+}
+
+/*Quitamos los puntos de todos los li*/
+li {
+    list-style-type: none;
+}
+
+/* Desplazamiento suave */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Eliminando estilos por defecto de las etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito Black", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    --tw-text-opacity: 1;
+    color: rgb(21 32 53 / var(--tw-text-opacity));
+}
+
+/* Problemas con pseudoelementos quotes */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+
+/* Configuracion de seleccion de textos */
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+}
+
+/* Tipografias y formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+
+/* Reseteo de tablas */
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Solucion a problemas con svg */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/* Tipografia para toda la web */
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--font-primary);
+    /* 
+    color: var(--color-primary);
+    background-color: var(--color-secundary); */
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 768px) {
+    h3,
+    .h3 {
+        font-size: 1.953125rem;
+    }
+    h2,
+    .h2 {
+        font-size: 2.44140625rem;
+    }
+}

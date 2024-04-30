@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-</head>
+@extends('includes.head')
 
 <body>
+
+    @include('includes.header')
+
+    <main class="main-content">
+        @yield('custom-content-layout')
+    </main>
+
+    @include('includes.footer')
 
 </body>
 
