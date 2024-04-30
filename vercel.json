@@ -8,6 +8,18 @@
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        },
+        {
+            "src": "/resources/(.*)",
+            "dest": "/public/resources/"
+        },
+        {
+            "src": "/build/(.*)",
+            "dest": "/public/build/"
+        },
+        {
+            "src": "/favicon/(.*)",
+            "dest": "/public/favicon/"
         }
     ],
     "env": {
