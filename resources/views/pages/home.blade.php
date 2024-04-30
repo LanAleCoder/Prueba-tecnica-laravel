@@ -1,5 +1,4 @@
 @extends('layouts.default')
-@extends('includes.head')
 @section('meta-tags')
     <title>MDB - Inicio</title>
     @vite(['resources/css/pages/home/home-style.css'])
