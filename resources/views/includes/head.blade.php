@@ -6,6 +6,7 @@
     @vite(['resources/css/utils/utils-style.css'])
     @vite(['resources/css/header/header-style.css'])
     @vite(['resources/css/footer/footer-style.css'])
+    @vite(['resources/css/pages/home/home-style.css'])
     {{-- Incluir nuevas meta etiquetas y la etiqueta de título --}}
     @yield('meta-tags')
 </head>
