@@ -34,7 +34,7 @@
                 <!-- Sección de categorías -->
                 <div class="inicio__categorias">
                     <h2 class="inicio__categorias-titulo">
-                        Explora nuestras categorías
+                        Conoce nuevas peliculas
                     </h2>
                     <p class="inicio__categorias-descripcion">
                         El cine, ese arte mágico que nos transporta a mundos inimaginables y nos envuelve en historias
@@ -42,20 +42,26 @@
                         atmósferas y emociones únicas. Embárcate en un viaje a través de los géneros cinematográficos más
                         populares y descubre los tesoros que te esperan en cada uno de ellos:
                     </p>
+                    @if ($movies)
+                        <ul class="inicio__categorias-lista row gy-5 gx-4">
+                            {{-- Peliculas --}}
+                            @foreach ($movies as $movie)
+                            <li class="inicio__categoria">
+                                <div class="inicio__categoria-url">
+                                    <div class="inicio__categoria-gradient"></div>
+                                    <img src="{{ env('URL_IMAGES_API_MOVIES') . $movie['poster_path'] }}" alt=""
+                                        class="inicio__categoria-img">
+                                    <h3 class="inicio__categoria-nombre">
+                                        {{ $movie['title'] }}
+                                    </h3>
+                                </div>
+                            </li>
+                            @endforeach
 
-                    <ul class="inicio__categorias-lista row gy-5 gx-4">
-                        {{-- Generos --}}
-                        <li class="inicio__categoria">
-                            <a href="" class="inicio__categoria-url">
-                                <div class="inicio__categoria-gradient"></div>
-                                <img src="" alt="" class="inicio__categoria-img">
-                                <h3 class="inicio__categoria-nombre">
+                        </ul>
+                    @endif
 
-                                </h3>
-                            </a>
-                        </li>
 
-                    </ul>
 
                 </div>
 
@@ -66,7 +72,7 @@
                     <p class="inicio__contacto-descripcion">
                         Historias que te atraparán, personajes que te enamorarán. Explora y encuentra tu próxima favorita.
                     </p>
-                    <a class="inicio__contacto-titulo-boton" href="">¡Empezar ya!</a>
+                    <a class="inicio__contacto-titulo-boton" href="{{ route('iniciar-sesion') }}">¡Empezar ya!</a>
                 </div>
             </div>
 

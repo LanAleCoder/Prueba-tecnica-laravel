@@ -12,6 +12,7 @@ export default defineConfig({
                 "resources/css/layout/layout-style.css",
                 "resources/css/utils/utils-style.css",
                 "resources/css/pages/home/home-style.css",
+                "resources/css/layout/auth/auth-style.css",
                 "resources/js/app.js",
             ],
             refresh: true,

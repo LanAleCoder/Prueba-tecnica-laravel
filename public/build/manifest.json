@@ -16,18 +16,23 @@
     "src": "resources/css/header/header-style.css",
     "isEntry": true
   },
+  "resources/css/layout/auth/auth-style.css": {
+    "file": "assets/auth-style-CXuoiH0B.css",
+    "src": "resources/css/layout/auth/auth-style.css",
+    "isEntry": true
+  },
   "resources/css/layout/layout-style.css": {
     "file": "assets/layout-style-ucX68Wma.css",
     "src": "resources/css/layout/layout-style.css",
     "isEntry": true
   },
   "resources/css/pages/home/home-style.css": {
-    "file": "assets/home-style-HFjATWEo.css",
+    "file": "assets/home-style-DYAGPZum.css",
     "src": "resources/css/pages/home/home-style.css",
     "isEntry": true
   },
   "resources/css/reset.css": {
-    "file": "assets/reset-D-cE7Mgx.css",
+    "file": "assets/reset-CKRJcy_w.css",
     "src": "resources/css/reset.css",
     "isEntry": true
   },
@@ -47,6 +52,10 @@
   "resources/fonts/Nunito-Regular.ttf": {
     "file": "assets/Nunito-Regular-BzIFT1ox.ttf",
     "src": "resources/fonts/Nunito-Regular.ttf"
+  },
+  "resources/images/auth/back.png": {
+    "file": "assets/back-CObJFHta.png",
+    "src": "resources/images/auth/back.png"
   },
   "resources/images/home/cinema-seccion1.jpg": {
     "file": "assets/cinema-seccion1-DSPHFNky.jpg",

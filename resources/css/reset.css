@@ -33,19 +33,19 @@
 }
 
 /* Adaptcación al modo oscuro */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
         --color-primary: #f0f0f0;
         --color-secundary: #181818;
     }
-} */
+}
 /* Configuración en modo alto contraste */
-/* @media (prefers-contrast: high) {
+@media (prefers-contrast: high) {
     :root {
         --color-primary: black;
         --color-secundary: white;
     }
-} */
+}
 /* Configuración de animaciones si el usuario lo desactiva  */
 @media (prefers-reduce-motion: reduce) {
     * {
@@ -126,8 +126,8 @@ h6 {
     font-family: "Nunito Black", sans-serif;
     font-weight: 700;
     line-height: 1.25;
-    --tw-text-opacity: 1;
-    color: rgb(21 32 53 / var(--tw-text-opacity));
+    /* --tw-text-opacity: 1;
+    color: rgb(21 32 53 / var(--tw-text-opacity)); */
 }
 
 /* Problemas con pseudoelementos quotes */
@@ -181,9 +181,8 @@ body {
     min-height: 100vh;
     font-size: 100%;
     font-family: var(--font-primary);
-    /* 
     color: var(--color-primary);
-    background-color: var(--color-secundary); */
+    background-color: var(--color-secundary);
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
