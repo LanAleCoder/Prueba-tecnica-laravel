@@ -34,7 +34,10 @@
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-
+        "BASE_URL_API_MOVIES": "https://api.themoviedb.org/3",
+        "URL_IMAGES_API_MOVIES": "https://image.tmdb.org/t/p/w500/",
+        "API_KEY_TMDB": "16ba2112a902a6af3f69a2f9a32c5f0b",
+        "TOKEN_API_TMDB": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNmJhMjExMmE5MDJhNmFmM2Y2OWEyZjlhMzJjNWYwYiIsInN1YiI6IjY2MmVkZjdkNzEzZWE2MDEyNTY4ZjcyZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QkCm-T8pgkcvrcatMqCyS6E_BhkyeE8ZWbbXP0QvntA",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
