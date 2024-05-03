@@ -119,7 +119,7 @@
     transform: translate(0, -0.25rem) rotate(0) skew(0) skewY(0) scaleX(1)
         scaleY(1);
     background: linear-gradient(115deg, #62cff4, #2c67f2);
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
     border: none;
 }
 
@@ -301,13 +301,5 @@
     }
     .inicio__contacto-titulo {
         font-size: 1.3rem;
-    }
-}
-
-
-@media (prefers-color-scheme: dark) {
-    .inicio__contacto {
-        background-color: transparent;
-        border: 10px solid #fff;
     }
 }

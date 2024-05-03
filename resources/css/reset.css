@@ -33,19 +33,19 @@
 }
 
 /* Adaptcación al modo oscuro */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --color-primary: #f0f0f0;
         --color-secundary: #181818;
     }
-}
+} */
 /* Configuración en modo alto contraste */
-@media (prefers-contrast: high) {
+/* @media (prefers-contrast: high) {
     :root {
         --color-primary: black;
         --color-secundary: white;
     }
-}
+} */
 /* Configuración de animaciones si el usuario lo desactiva  */
 @media (prefers-reduce-motion: reduce) {
     * {

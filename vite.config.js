@@ -14,6 +14,7 @@ export default defineConfig({
                 "resources/css/pages/home/home-style.css",
                 "resources/css/layout/auth/auth-style.css",
                 "resources/js/app.js",
+                "resources/js/auth.js"
             ],
             refresh: true,
         }),

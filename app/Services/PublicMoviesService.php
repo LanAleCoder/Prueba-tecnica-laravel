@@ -1,16 +1,17 @@
 <?php
 namespace App\Services;
+use Illuminate\Http\Client\Factory as HttpClientFactory;
 
-use Illuminate\Support\Facades\Http;
 use App\Services\TokenExternalAPIService;
 
 class PublicMoviesService
 {
     private $tokenService;
 
-    public function __construct(TokenExternalAPIService $tokenService)
+    public function __construct(TokenExternalAPIService $tokenService, private HttpClientFactory $http)
     {
         $this->tokenService = $tokenService;
+        $this->http = $http;
     }
 
 
@@ -18,7 +19,7 @@ class PublicMoviesService
     {
         $tokenAPI = $this->tokenService->getToken();
         $apiURL = env('BASE_URL_API_MOVIES');
-        $response = Http::withToken($tokenAPI)->acceptJson()->get($apiURL . '/discover/movie');
+        $response = $this->http->withToken($tokenAPI)->acceptJson()->get($apiURL . '/discover/movie');
         if ($response->successful()) {
             $moviesData = $response->json();
             $movies = $moviesData['results'];
